@@ -88,7 +88,7 @@ export function categoryCreator() {
         const stat = fs.statSync(path.join(MD_PATH, v))
         if (stat.isDirectory()) {
 
-            const link = './' + path.join(MD_PATH, v).replace(/\.md|\.\.\\/g, '').replace(/\\/g, '/') + '/'
+            const link = path.join(MD_PATH, v).replace(/\.md|\.\.\\/g, '').replace(/\\/g, '/') + '/'
             pre.push({
                 // text: v,
                 text: link,
