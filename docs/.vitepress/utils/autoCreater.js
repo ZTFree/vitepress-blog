@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 
-const ROOT_PATH = path.resolve().replace('/vitepress-blog','')
+const ROOT_PATH = path.resolve()
 const MD_PATH = path.join(ROOT_PATH,'docs','MD-Pro')
 console.log(MD_PATH);
 
@@ -88,7 +88,7 @@ export function categoryCreator() {
         const stat = fs.statSync(path.join(MD_PATH, v))
         if (stat.isDirectory()) {
 
-            const link = '/' + path.join(MD_PATH, v).replace(/\.md|\.\.\\/g, '').replace(/\\/g, '/') + '/'
+            const link = '/' + path.join(MD_PATH.replace('/vitepress-blog',''), v).replace(/\.md|\.\.\\/g, '').replace(/\\/g, '/') + '/'
             pre.push({
                 text: v,
                 link
