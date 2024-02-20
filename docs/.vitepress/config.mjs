@@ -8,7 +8,7 @@ import {categoryCreator,sideBarCreator} from './utils/autoCreater'
 
 export default defineConfig({
   outDir: './.vitepress/dist',
-  base: '/vitepress-blog',
+  // base: '/vitepress-blog',
   // 首页标题
   title: "我的MD笔记博客",
   // 网站描述
