@@ -75,20 +75,13 @@ export function sideBarCreator() {
 
 // 导航栏分类展开栏数组
 export function categoryCreator() {
-// return [{
-//     text: `${ROOT_PATH}`,
-//     link: '/'
-//   },{
-//     text: `${MD_PATH}`,
-//     link: '/'
-//   }]
 
     return fs.readdirSync(MD_PATH).reduce((pre, v) => {
         if (judgeIllegal(v)) return pre
         const stat = fs.statSync(path.join(MD_PATH, v))
         if (stat.isDirectory()) {
 
-            const link = '/' + path.join(MD_PATH, v).replace(/\.md|\.\.\\/g, '').replace(/\\/g, '/') + '/'
+            const link = '/' + path.join('MD-Pro',v).replace(/\.md|\.\.\\/g, '').replace(/\\/g, '/') + '/'
             pre.push({
                 text: v,
                 link
