@@ -10,22 +10,25 @@ export default defineConfig({
   outDir: './.vitepress/dist',
   base: '/vitepress-blog',
   // 首页标题
-  title: "我的MD笔记博客",
+  title: "ZTFree's Blog",
   // 网站描述
   description: "A VitePress Site",
   // 开启最后更新时间功能
   lastUpdated: true,
+  
+  // 默认颜色主题
+  appearance:'dark',
+
+  head:[['link',{rel:'icon',href:'/logo.png'}]],
 
   themeConfig: {
     // 网页logo
     logo: '/logo.png',
-
     // 本地化设置
     i18nRouting: 'zh',
     // 首页左上角标题
-    siteTitle: '我的MD笔记博客',
-    // 默认颜色主题
-    appearance: 'dark',
+    siteTitle: 'My Markdown Blog',
+
     // 导航栏
     nav: [{
         text: '首页',
@@ -36,7 +39,6 @@ export default defineConfig({
         items: categoryCreator()
       }
     ],
-
 
     // 侧边栏
     sidebar: sideBarCreator(),
@@ -61,8 +63,9 @@ export default defineConfig({
       level: 2
     },
 
-    // 首页社交账号链接
-    socialLinks: [{
+    // 首页社交账号链接:github、gitee
+    socialLinks: [
+    {
       icon: 'github',
       link: 'https://github.com/ZTFree'
     }, {
@@ -78,9 +81,8 @@ export default defineConfig({
     },
 
     // 明暗模式切换
-    lightModeSwitchTitle: '光明模式',
-    darkModeSwitchTitle: '黑夜模式',
-
+    lightModeSwitchTitle: '明',
+    darkModeSwitchTitle: '暗',
 
   }
 })
