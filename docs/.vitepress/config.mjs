@@ -19,7 +19,7 @@ export default defineConfig({
   // 默认颜色主题
   appearance:'dark',
 
-  head:[['link',{rel:'icon',href:'/logo.png'}]],
+  head:[['link',{rel:'icon',href:'./logo.png'}]],
 
   themeConfig: {
     // 网页logo

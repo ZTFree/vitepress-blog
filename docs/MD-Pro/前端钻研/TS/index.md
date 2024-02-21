@@ -455,3 +455,5 @@ class Man{
 - IOC控制反转？
 - 依赖注入？
 - AOP面向切面？
+
+- declare
