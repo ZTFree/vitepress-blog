@@ -457,3 +457,4 @@ class Man{
 - AOP面向切面？
 
 - declare
+- 类型声明文件

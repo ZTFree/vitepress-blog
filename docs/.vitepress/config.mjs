@@ -10,7 +10,7 @@ export default defineConfig({
   outDir: './.vitepress/dist',
   base: '/vitepress-blog',
   // 首页标题
-  title: "ZTFree's Blog",
+  title: "ZTFree个人博客",
   // 网站描述
   description: "A VitePress Site",
   // 开启最后更新时间功能
@@ -27,7 +27,7 @@ export default defineConfig({
     // 本地化设置
     i18nRouting: 'zh',
     // 首页左上角标题
-    siteTitle: 'My Markdown Blog',
+    siteTitle: 'ZTFree个人博客',
 
     // 导航栏
     nav: [{
@@ -70,7 +70,7 @@ export default defineConfig({
       link: 'https://github.com/ZTFree'
     }, {
       icon: {
-        svg: '<img style="width:20px;height:20px;" src="https://gitee.com/assets/favicon.ico"></img>'
+        svg: '<img style="width:20px;height:20px;" src="https://gitee.com/assets/favicon.ico" title="Gitee"></img>'
       },
       link: 'https://gitee.com/tel18820503733'
     }],

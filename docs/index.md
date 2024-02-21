@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "我的MD笔记博客"
-  text: "BY ZTFree"
-  tagline: 基于VitePress搭建
+  name: "ZTFree个人博客"
+  text: "基于VitePress搭建"
+  tagline: 记录编程学习笔记
   image:
       src: /logo.png
       alt: avatar
@@ -25,24 +25,9 @@ features:
   - title: 昵称
     details: ZTFree
 
-  - title: 性别
-    details: 男♂
-
-  - title: 年龄
-    details: 18
-
-  - title: 身高
-    details: 190cm
-
-  - title: 腹肌
-    details: 八块
-
-  - title: 婚姻状态
-    details: 未婚
-
-  - title: 收入
-    details: -2K💵
-
   - title: 喜好
-    details: debug
+    details: 编程、电子游戏
+
+  - title: 技术方向
+    details: 前端
 ---
