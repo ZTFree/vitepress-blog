@@ -1,0 +1,163 @@
+# 项目依赖
+
+```json
+{
+  "name": "geeker-admin",
+  "private": true,
+  "version": "1.2.0",
+  "type": "module",
+  "description": "geeker-admin open source management system",
+  "author": {
+    "name": "Geeker",
+    "email": "848130454@qq.com",
+    "url": "https://github.com/HalseySpicy"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/HalseySpicy/Geeker-Admin",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:HalseySpicy/Geeker-Admin.git"	
+  },
+  "bugs": {
+    "url": "https://github.com/HalseySpicy/Geeker-Admin/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite",
+    "build:dev": "vue-tsc && vite build --mode development",
+    "build:test": "vue-tsc && vite build --mode test",
+    "build:pro": "vue-tsc && vite build --mode production",
+    "type:check": "vue-tsc --noEmit --skipLibCheck",
+    "preview": "npm run build:dev && vite preview",
+    "lint:eslint": "eslint --fix --ext .js,.ts,.vue ./src",
+    "lint:prettier": "prettier --write \"src/**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint:lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "release": "standard-version",
+    "commit": "git add -A && czg && git push"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueuse/core": "^10.7.1",
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "^5.1.12",
+    "axios": "^1.6.3",
+    "dayjs": "^1.11.10",
+    "driver.js": "^1.3.1",
+    "echarts": "^5.4.3",
+    "echarts-liquidfill": "^3.1.0",
+    "element-plus": "^2.4.4",
+    "md5": "^2.3.0",
+    "mitt": "^3.0.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "qs": "^6.11.2",
+    "screenfull": "^6.0.2",
+    "sortablejs": "^1.15.1",
+    "vue": "^3.4.3",
+    "vue-i18n": "^9.8.0",
+    "vue-router": "^4.2.5",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/md5": "^2.3.5",
+    "@types/nprogress": "^0.2.3",
+    "@types/qs": "^6.9.11",
+    "@types/sortablejs": "^1.15.7",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "@vitejs/plugin-vue": "^5.0.2",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "autoprefixer": "^10.4.16",
+    "cz-git": "^1.8.0",
+    "czg": "^1.8.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-vue": "^9.19.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "postcss": "^8.4.32",
+    "postcss-html": "^1.5.0",
+    "prettier": "^3.1.1",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "sass": "^1.69.7",
+    "standard-version": "^9.5.0",
+    "stylelint": "^16.1.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^12.0.0",
+    "typescript": "^5.3.3",
+    "unplugin-vue-setup-extend-plus": "^1.0.0",
+    "vite": "^5.0.10",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-html": "^3.2.1",
+    "vite-plugin-pwa": "^0.17.4",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^1.8.27"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}
+
+```
+
+## 配置项解读
+
+- `"private": true`
+  -  该包为私有的,npm会拒绝发布该包
+- `  "type": "module"`
+  - ???
+- `"license": "MIT"`
+  - 项目开源许可证类型
+- `  "homepage": "https://github.com/HalseySpicy/Geeker-Admin"`
+  - 项目首页url
+
+- `"repository"`
+  - 项目仓库信息
+-  ` "bugs"`	
+  - 项目bug上报地址
+
+## 认识依赖
+
+### 核心
+
+- ⭐wangeditor：开源 Web 富文本编辑器，开箱即用，配置简单。支持 JS Vue React 。
+- ⭐driver.js：产品导览，重点介绍，上下文帮助
+- ⭐echarts：一个基于 JavaScript 的开源可视化图表库
+- md5：md5加密算法库
+- mitt：事件总线库（略）
+- ⭐nprogress：轻量级页面顶部进度条库
+- qs：查询字符串解析与序列化的库
+- ⭐screenfull：标签元素全屏展示库
+- ⭐sortablejs：列表拖拽排序库
+- ⭐vuedraggable：基于sortablejs的vue的排序
+
+### 开发
+

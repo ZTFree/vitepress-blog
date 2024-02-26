@@ -1,4 +1,4 @@
-# router-view使用Transition过渡报错
+# 路由使用Transition过渡报错
 
 ## 一、问题描述
 

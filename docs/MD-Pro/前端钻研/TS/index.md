@@ -458,3 +458,4 @@ class Man{
 
 - declare
 - 类型声明文件
+- takeover模式

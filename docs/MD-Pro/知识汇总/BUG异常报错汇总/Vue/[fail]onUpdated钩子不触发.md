@@ -1,4 +1,4 @@
-# onUpdated钩子不触发
+# [fail]onUpdated钩子不触发
 
 ## 一、问题描述
 
