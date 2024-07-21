@@ -22,6 +22,7 @@ git cz
 
 
 
-## 注意
+## 相关报错
 
 - 若执行cz时，提示`The config file at "C:\Users\Zen\.czrc" contains invalid charset, expect utf8`，则将对应文件编码修改为utf8解决
+

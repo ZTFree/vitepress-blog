@@ -1,0 +1,4 @@
+- navigator.geolocation.getCurrentPosition
+  - 获取定位信息
+- navigator.permissions.query
+  - 获取navigator下相关功能的权限信息（如是否有定位权限）
